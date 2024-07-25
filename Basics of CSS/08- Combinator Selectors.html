@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        .a1 p{
+            color: red;
+        }
+        .a1>p{
+            font-size: 33px;
+        }
+        .a1+p{
+           background-color:green;
+        }
+        .a1~p{
+            border: 4px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, dolorem.</p>
+    <h1>LOREM</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, provident!</p>
+
+    <!--
+            .a1 p targets all <p> elements inside any element with the class .a1.
+            
+            .a1>p targets all <p> elements that are direct children of any element with the class .a1.
+        
+            .a1+p targets the first <p> element immediately following any element with the class .a1.
+            
+            .a1~p targets all <p> elements that are siblings of any element with the class .a1.
+    
+    -->
+</body>
+</html>
