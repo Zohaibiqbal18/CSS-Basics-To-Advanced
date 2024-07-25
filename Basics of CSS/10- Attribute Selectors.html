@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        [target] {
+            background-color: yellow;
+        }
+        a[target="_blank"] {
+            color: red;
+        }
+        [class~="box"] {
+            border: 1px solid black;
+        }
+        [lang|="en"] {
+            font-style: italic;
+        }
+        [class^="primary"] {
+            color: red;
+        }
+        [class$="-active"] {
+            background-color: green;
+            font-size: 20px;
+            color: black;
+        }
+        [class*="nav"] {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.example.com" target="_blank">Visit Example</a>
+    <div class="box large-box">Box</div>
+    <p lang="en-us">This is English text.</p>
+    <div class="primary class">Primary Button</button>
+    <div class="user-active">Active User</div>
+    <div class="main-nav">Navigation</div>
+
+
+    <!---
+        [target]:
+        Selects any element with a target attribute and sets its background color to yellow.
+
+        a[target="_blank"]:
+        Selects <a> elements (anchors) where the target attribute is exactly _blank and sets their text color to red.
+
+        [class~="box"]:
+        Selects elements with a class attribute containing the word "box" (as a whole word) and adds a 1px solid black border.
+
+        [lang|="en"]:
+        Selects elements with a lang attribute value that is either exactly "en" or starts with "en-" (such as "en-US" or "en-GB") and sets their font style to italic.
+
+        [class^="primary"]:
+        Selects elements with a class attribute that starts with "primary" and sets their text color to red.
+
+        [class$="-active"]:
+        Selects elements with a class attribute that ends with "-active" and sets their background color to green, font size to 20px, and text color to black.
+
+        [class*="nav"]:
+        Selects elements with a class attribute that contains the substring "nav" and sets their text color to blue.
+
+    -->
+
+</body>
+</html>
