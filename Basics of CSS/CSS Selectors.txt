@@ -1,0 +1,33 @@
+CSS Selectors:
+
+1. Basic Selectors
+	Universal Selector (*) -----> Selects all elements on the page.
+	Type Selector (Element Selector) -----> Selects all elements of a given type.
+	Class Selector -----> Selects all elements with a specific class.
+	ID Selector -----> Selects a single element with a specific ID.
+
+2. Attribute Selectors
+	[attribute] -----> Selects elements with a specific attribute.
+	[attribute="value"] -----> Selects elements with an attribute value containing a specific value.
+	[attribute|=value] -----> Select elements with an attribute that has a specific value or a value that starts with that value followed by a hyphen (-)
+	[attribute~=value] -----> Select elements with an attribute whose value is a space-separated list of words, one of which is exactly equal to the specified value.
+	[attribute^="value"] -----> Selects elements with an attribute value starting with a specific value.
+	[attribute$="value"] -----> Selects elements with an attribute value ending with a specific value.
+	[attribute*=value] -----> Select elements with an attribute that contains a specified substring anywhere within its value.
+
+3. Combinators
+	Descendant Selector (space) -----> Selects elements that are descendants of another element.
+	Child Selector (>) -----> Selects elements that are direct children of a specified element.
+	Adjacent Sibling Selector (+) -----> Selects an element that is the next sibling of a specified element.
+	General Sibling Selector (~) -----> Selects all siblings of a specified element.
+	
+4. Pseudo-classes
+	a:hover -----> Selects elements when the user hovers over them.
+	tr:nth-child(even) -----> Selects elements based on their position in a group of siblings.
+	p:first-child -----> Selects the first child of an element.
+
+5. Pseudo-elements
+	::before -----> Inserts content before an element’s actual content.
+	::after -----> Inserts content after an element’s actual content.
+	::first-letter -----> Selects the first letter of a specified element.
+	::first-line -----> Selects the first line of a specified element.
