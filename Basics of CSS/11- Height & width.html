@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width</title>
+    <style>
+        .a1{
+            width: 100px;
+            height: 100px;  /*Text wil overflow after this*/
+            background-color: red;
+            color: white;
+        }
+        .a2{
+            background-color: greenyellow;
+            max-width: 150px;     /*Maximum width even when content is more.*/
+            max-height: 200px;   /*Text wil overflow after this*/
+        }
+        .a3{
+            background-color: khaki;
+            min-width: 10px;    /*Minimum width even if content is less*/
+            min-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">
+        This box is 100px x 100px in size.
+    </div><br>
+    <div class="a2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatibus rerum porro nostrum labore ea placeat dolor ga quo cumque odio nam earum consequatur aut fugiat placeat pariatur provident cum sapiente, voluptates aspernatur saepe repellat
+    </div><br><br><br>
+    <div class="a3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo dolo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit qui repudiandae accusamus, architecto nulla aperiam commodi tempora iusto rerum eum facilis eligendi explicabo iste fugiat! Facilis vel at mollitia dolor.
+    </div>
+</body>
+</html>
