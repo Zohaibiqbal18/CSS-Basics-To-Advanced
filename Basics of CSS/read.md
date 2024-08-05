@@ -1,1 +1,1 @@
-Welcome to the Basics of CSS, an ultimate CSS learning repository.
+Welcome to the "Basics of CSS" section of CSS-Basics-To-Advanced learning repository.
