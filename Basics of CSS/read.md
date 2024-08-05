@@ -1,1 +1,1 @@
-Welcome to the ultimate CSS learning repository designed to take you from a beginner to an expert in Cascading Style Sheets (CSS).
+Welcome to the Basics of CSS, an ultimate CSS learning repository.
