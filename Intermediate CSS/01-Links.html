@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*a normal, unvisited link*/
+        a:link{
+            color: brown;
+            font-size: 30px;
+            text-decoration-line: underline;
+            text-decoration-color: blue;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 5px;
+        }
+        /*a link the user has visited*/
+        a:visited{
+            color: green;
+        }
+        /*a link when the user mouses over it*/
+        a:hover{
+            color: black;
+        }
+        /*a link the moment it is clicked*/
+        a:active{
+            color: chartreuse;
+        }
+
+        /*a:hover MUST come after a:link and a:visited
+        a:active MUST come after a:hover*/
+    </style>
+</head>
+<body>
+    <a href="https://chatgpt.com/" target="_blank">Go to ChatGpt</a>
+</body>
+</html>
