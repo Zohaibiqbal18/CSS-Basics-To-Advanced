@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .a1{
+            border: 3px solid;
+            width: 120px;
+            height: 120px;
+            overflow: visible;
+        }
+        .a2{
+            border: 3px solid red;
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+        }
+        .a3{
+            border: 3px solid blue;
+            width: 120px;
+            height: 120px;
+            overflow: scroll;
+        }
+        .a4{
+            border: 3px solid green;
+            width: 120px;
+            height: 120px;
+            overflow: auto;   /*similar to scroll but add scrollbar when necassary*/
+        }
+        .a5{
+            border: 3px solid tan;
+            width: 90px;
+            overflow-x: scroll;
+        }
+        .a6{
+        border: 3px solid rebeccapurple;
+        width: 200px;
+        height: 60px;
+        overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <!-------------------- Overflow: visible; ------------------>
+    <div class="a1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit! Lorem ipsum dolor sit amet consectetur,esse.
+    </div><br><br>
+    <!-------------------- Overflow: hidden; ------------------>
+    <div class="a2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit! Lorem ipsum dolor sit amet consectetur,esse.
+    </div><br>
+    <!-------------------- Overflow: scroll; ------------------>
+    <div class="a3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit! Lorem ipsum dolor sit amet consectetur,esse.
+    </div><br>
+    <!-------------------- Overflow: auto; ------------------>
+    <div class="a4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit! Lorem ipsum dolor sit amet consectetur,esse.
+    </div><br>
+    <!-------------------- Overflow-x ------------------>
+    <div class="a5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit! Lorem ipsum dolor sit amet consectetur,esse.
+    </div><br>
+    <!-------------------- Overflow-y ------------------>
+    <div class="a6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit! Lorem ipsum dolor sit amet consectetur,esse.
+    </div>
+</body>
+</html>
