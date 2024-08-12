@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Position</title>
+  <style>
+    .relative-box {
+      position: relative;
+      background-color: deepskyblue;
+      width: 120px;
+      height: 100px;
+      top: 20px;
+      left: 40px;
+      right: 30px; /*ignored*/
+      bottom: 100px; /*ignored*/
+    }
+    /*If both left and right are applied to a relative element, the browser will prioritize the left value over right. unless certain conditions, like negative values or conflicting styles, come into play. Same with Top and bottom*/
+  </style>
+</head>
+<body>
+  
+  <!-------- Position: relative; ----->
+  <!---- The element is positioned relative to its normal position. You can use top, right, bottom, and left properties to adjust its position without affecting the flow of surrounding elements.--->
+  <div class="relative-box">
+    Relative Position
+  </div>
+  
+</body>
+</html>
