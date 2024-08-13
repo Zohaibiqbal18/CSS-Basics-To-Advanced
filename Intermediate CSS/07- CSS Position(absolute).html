@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Absolute Position</title>
+  <style>
+    .container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    }
+
+  .absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: lightcoral;
+    padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!--- Position: absolute; ------->
+  <!--- The element is positioned relative to its nearest positioned ancestor (i.e., the nearest ancestor with a relative, absolute, fixed, or sticky position). If no such ancestor exists, it is positioned relative to the initial containing block (typically the <html> element). The element is removed from the normal document flow, meaning it won't affect the position of other elements. --->
+  <div class="container">
+    <div class="absolute-box">
+      Absolute Position
+    </div>
+  </div>
+</body>
+</html>
