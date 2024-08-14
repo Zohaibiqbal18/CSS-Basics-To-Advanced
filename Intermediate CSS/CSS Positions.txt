@@ -1,0 +1,5 @@
+---> static: Default positioning, no effect from top, right, bottom, left.
+---> relative: Positioned relative to its normal position, affecting only itself.
+---> absolute: Positioned relative to its nearest positioned ancestor or initial containing block, removed from normal flow.
+---> fixed: Positioned relative to the viewport, always in the same place even when scrolling.
+---> sticky: Positioned based on the scroll position, toggling between relative and fixed.
