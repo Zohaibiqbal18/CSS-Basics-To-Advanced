@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Clear</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            float: left;
+        }
+        .box1 {
+            background-color: lightcoral;
+        }
+        .box2 {
+            background-color: lightseagreen;
+        }
+        .box3 {
+            background-color: lightblue;
+        }
+        .clear {
+            clear: both;
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>The CSS clear property is used to control the behavior of an element with respect to floating elements that come before it. It specifies whether an element should be moved down (cleared) below floating elements to avoid wrapping text or other inline elements around the floated elements.</p>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="clear">Cleared Content - This will appear below the floated boxes</div>
+    <div class="box box3">Box 3</div>
+</body>
+</html>
