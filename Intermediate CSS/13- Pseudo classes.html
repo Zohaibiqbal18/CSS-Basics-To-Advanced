@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        .a1{
+            width: 150px;
+            height: 20px;
+            background-color: red;
+        }
+        .a1:hover{
+            background-color: blue;
+        }
+       
+        a:active{
+            color: red;
+        }
+
+        input:focus{
+            border-color: red;
+            background-color: grey;
+            color: white;
+        }
+
+        li:nth-child(even){
+            color: red;
+        }
+
+        p:first-child{
+            color: hotpink;
+        }
+
+        p:last-child{
+            color: peru;
+        }
+
+        p:nth-of-type(1){
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        input:checked + label{
+            color: blue;
+        }
+
+        input:disabled{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1"></div>
+    
+    <div class="a2"></div>
+
+    <div class="a3">
+        <a href="www.cricbuzz.com">Go to Cricbuzz</a>
+    </div><br>
+    
+    <div class="a4">
+        <input type="text" placeholder="Enter anything here">
+    </div>
+    
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ol>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+
+    <input type="checkbox" checked> 
+    <label for="Apple">Apple</label>
+    <input type="checkbox">
+    <label for="Mango">Mango</label><br>
+
+    <input type="text" disabled>
+
+
+
+</body>
+</html>
