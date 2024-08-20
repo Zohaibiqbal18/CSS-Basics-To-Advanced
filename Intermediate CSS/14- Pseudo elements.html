@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        #a1::before {
+            content: "Note: ";
+            font-weight: bold;
+            color: red;
+        }
+
+        #a2::after{
+            content: "Read more...";
+            font-weight: 800;
+            color: red;
+        }
+
+        #a3::first-letter {
+            font-size: 32px;
+            color: purple;
+            font-weight: bold;
+        }
+
+        #a4::first-line{
+            font-size: 2em;     /*Default font size is 16px so 2em = 2x16 = 32px*/
+            color: green;
+        }
+
+        input::placeholder{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="a1">This is a paragraph.</p>
+    <p id="a2">This is a paragraph.</p>
+    <p id="a3">This is a paragraph.</p>
+    <p id="a4">This is a paragraph.</p>
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>
